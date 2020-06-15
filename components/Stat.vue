@@ -22,13 +22,6 @@ export default {
     this.getData(this.activeCurrency);
     this.webSocketSubscribe(this.activeCurrency);
   },
-  created() {
-    this.$bus.$on('currency', currency => {
-      this.$bus.$on('currency', currency => {
-        this.activeCurrency = currency;
-      });
-    });
-  },
   props: {
     activeCurrency: {
       type: String,
