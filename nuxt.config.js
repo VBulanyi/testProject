@@ -1,5 +1,8 @@
 export default {
   mode: 'spa',
+  router: {
+    base: '/testProject/',
+  },
   /*
    ** Headers of the page
    */

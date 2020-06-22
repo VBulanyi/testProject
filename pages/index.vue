@@ -2,7 +2,7 @@
   <div class="container">
     <h2>Выбранная валюта: {{ activeCurrency }}</h2>
     <stat v-if="isActive" :activeCurrency="activeCurrency" />
-    <rates v-else />
+    <rates :activeCurrency="activeCurrency" v-else />
   </div>
 </template>
 

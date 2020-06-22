@@ -19,8 +19,14 @@ export default {
   data() {
     return {
       currencyArray: ['BTCUSDT', 'BNBBTC', 'ETHBTC'],
-      activeCurrency: 'BTCUSDT',
+      activeCurrency: this.activeCurrency,
     };
+  },
+  props: {
+    activeCurrency: {
+      type: String,
+      require: true,
+    },
   },
   watch: {
     activeCurrency(currency) {
